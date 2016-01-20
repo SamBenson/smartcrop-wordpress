@@ -1,0 +1,20 @@
+.smartcrop {
+	overflow: hidden;
+}
+
+.smartcrop img {
+	visibility: hidden;
+}
+
+.smartcrop canvas {
+	opacity: 0;
+	transition: 1s opacity ease-in;
+}
+
+.smartcrop.cropped img {
+	display: none;
+}
+
+.smartcrop.cropped canvas {
+	opacity: 1;
+}
